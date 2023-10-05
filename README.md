@@ -1,2 +1,2 @@
 # idm221-jc4654
- idm221 fluffy bakery
+Class project for IDM221, Drexel University's Web Design I class.
