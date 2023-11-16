@@ -9,7 +9,7 @@ body {
     background-color: #F9F7E8;
 }
 
-/* REUSABLE CLASSES */
+/* --- REUSABLE CLASSES --- */
 
 .container {
     position: relative;
@@ -64,7 +64,7 @@ body {
     background-size: cover;
 }
 
-/* FONT */
+/* --- FONT --- */
 /* @font-face {
     font-family: League Soartan;
     src: url('');
@@ -77,7 +77,9 @@ body {
   } */
 
 
-/* PAGE SPECIFIC PROPERTIES */
+/* --- PAGE SPECIFIC PROPERTIES --- */
+
+/* Home */
 
 #heroHome {
     position: relative;
@@ -181,6 +183,8 @@ body {
     z-index: 1;
 }
 
+/* catalog */
+
 .catalogSection {
     padding-top: 10rem;
     display: flex;
@@ -191,6 +195,8 @@ body {
     gap: 2rem;
     margin: auto;
 }
+
+/* cart */
 
 .cartItem {
     /* refactored 'card' class */
@@ -224,10 +230,78 @@ body {
     border-radius: 10px;
 }
 
+/* gallery */
+
 .galleryBody {
     padding-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 5rem;
+}
+
+/* order */
+
+#orderInputSection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.inputTile {
+    height: 21vh;
+    width: 43vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px transparent #9B5C49;
+}
+
+input[type="radio"]::after {
+    position: absolute;
+    /* font-family: ;
+    font-weight: ; 
+    font-size: ; */
+    top: 10px;
+    left: 10px;
+    background-color: firebrick;
+}
+
+input[type="radio"]:checked {
+    border-radius: 10px;
+    border: 1px solid #9B5C49;
+    background: rgba(218, 172, 75, 0.10);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 80%;
+    width: 100;
+    position: absolute;
+    bottom: 0;
+}
+
+/* label h {
+
+} */
+
+#orderToppings {
+    
 }
