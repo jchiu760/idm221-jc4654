@@ -10,23 +10,65 @@
   media="screen"/>
 </head>
 <body>
-  <!-- hero -->
-  <div class="heroGeneral">
-    <div class="heroBorderGeneral">
-        <h>
-            <!-- make id for page title -->
-            Cart
-        </h>
-    </div>
-        <div class="heroGeneralCard">
-            <h>
-              Ready to receive your yummy eats?
-            </h>
-            <h>
-              tip: tap on photos to see custom order specifications
-            </h>
-        </div>
-    </div>
+    <!-- hero -->
+    <div class="heroGeneral">
+      <div class="heroBorderGeneral">
+          <h>
+              <!-- make id for page title -->
+              Cart
+          </h>
+          <img class="heroImage" src="./media/heroCart.png" alt="Fancy flowery cake"></img>
+          <div class="heroGeneralCard">
+              <h>
+                Ready to receive your yummy eats?              </h>
+                <h>
+                  tip: tap on photos to see custom order specifications             </h>
+          </div>
+          
+
+      </div>
+  </div>
+  <!-- content -->
+  <div class="cartItem">
+    <h class="cardHeader">
+      1 strawberry shortcake
+    </h>
+    <img src="./media/catalogCake.png" alt="Strawberry shortcake in the shape of a heart" width="50%">
+    </img>
+    <h class="cardHeader">
+      $14.00
+    </h>
+  </div>
+  
+  <div class="cartItem">
+    <h class="cardHeader">
+      1 strawberry shortcake
+    </h>
+    <img src="./media/catalogCake.png" alt="Strawberry shortcake in the shape of a heart" width="50%">
+    </img>
+    <h class="cardHeader">
+      $14.00
+    </h>
 </div>
+<div style="padding-top: 20rem;">
+  <h>
+    total: $34.00
+  </h>
+</div>
+<div id="cartForm">
+<h>contact info</h>
+<form>
+  <!-- reserved for php -->
+  <input type="email" id="cartInput" name="Email" placeholder="Email (hi@fluffybakery.net)">
+  <input type="number" id="cartInput" name="Phone" placeholder="Phone number (xxx-xxx-xxxx)">
+</form>
+<button class="button">
+  confirm order!!!
+</button>
+<p>
+  Note: Payment and further discussion will be discussed externally. Submitting an order is your first, but not last, step to receiving your cake!
+</p>
+</div>
+  
 </body>
 </html>
