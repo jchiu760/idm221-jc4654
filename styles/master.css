@@ -223,3 +223,11 @@ body {
     border: 1px solid var(--PinkDark, #824836);
     border-radius: 10px;
 }
+
+.galleryBody {
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
