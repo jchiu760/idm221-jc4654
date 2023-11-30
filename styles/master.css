@@ -15,7 +15,13 @@ body {
     background-color: #F9F7E8;
 }
 
+/* --- */
+/* --- */
+
 /* --- REUSABLE CLASSES --- */
+
+/* --- */
+/* --- */
 
 .container {
     position: relative;
@@ -115,6 +121,31 @@ body {
     line-height: 201.023%; /* 96.491px */
 }
 
+.titlePage2 {
+    color: #000;
+    text-align: center;
+    text-shadow: 0px 1px 8px rgba(35, 35, 35, 0.25);
+    font-family: 'Mindset', sans-serif;
+    font-size: 126px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 201.023%; /* 96.491px */
+    position: relative;
+    top: 25rem;
+    left: 2rem;
+    z-index: 10;
+}
+
+.titlePageSubheader {
+    color: var(--Gray, #313131);
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%; /* 40px */
+
+}
+
 #homeProceed {
     padding: top 1rem;
     font-size:32px;
@@ -184,8 +215,47 @@ line-height: 153.023%; /* 24.484px */
 text-align: left;
 }
 
+#aboutBlurbText {
+    color: var(--Gray, #313131);
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%; /* 32px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 11rem 3rem 0 3rem;
+}
+
+.aboutParagraph {
+    color: var(--Gray, #313131);
+    text-align:left;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 275%; /* 32px */
+    padding: 0 3rem 3rem 3rem;
+}
+
+#aboutClosingText {
+    color: var(--Gray, #313131);
+    text-align: center;
+    font-family: League Spartan;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%; /* 48px */
+}
+
+/* --- */
+/* --- */
 
 /* --- PAGE SPECIFIC PROPERTIES --- */
+
+/* --- */
+/* --- */
 
 /* Home */
 
@@ -225,6 +295,9 @@ text-align: left;
     background: #F9F7E8;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 0px 0px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .heroImage {
@@ -409,4 +482,7 @@ label {
 /* label h {
 
 } */
+
+
+/* about */
 
