@@ -1,10 +1,16 @@
+* {
+    font-family: 'LeagueSpartan', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0; 
     padding: 0; 
     width: 100%;
     height: 100vh;
     background: url(../media/texturePaper.png), no-repeat;
-    background-size: cover;
+    background-size: 1000%;
     background-blend-mode: multiply;
     background-color: #F9F7E8;
 }
@@ -14,7 +20,7 @@ body {
 .container {
     position: relative;
     padding-top: 10vh;
-    overflow: clip;
+    overflow-x: clip;
     display:flex;
     flex-direction: column;
 }
@@ -35,8 +41,14 @@ body {
     background-image: url(../media/card.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 40%;
+    height: 43vh;
     z-index: 1;
+}
+
+.cardText {
+    transform: rotate(2.015deg);
+    padding: 7vh 19vw 0 19vw;
+
 }
 
 .button {
@@ -53,28 +65,124 @@ body {
 
 .cta {
     display: flex;
+    flex-direction: column;
     position: relative;
-    width: 79%;
-    height: 20%;
-    margin: auto;
     margin-top: 20rem;
     flex-shrink: 0;
     background-image: url(../media/cardcta.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
+}
+
+.ctaBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 /* --- FONT --- */
-/* @font-face {
-    font-family: League Soartan;
-    src: url('');
-} */
+@font-face {
+    font-family: 'LeagueSpartan';
+    src: url('../media/fonts/LeagueSpartan-VariableFont_wght.ttf');
+}
 
-/* .cardHeader {
+@font-face {
+    font-family: 'Mindset';
+    src: url('../media/fonts/mindset-regular-1.ttf')
+}
+
+#titleSubHome {
+    color: black;
+    text-align: center;
+    font-family: 'LeagueSpartan';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 201.023%; /* 64.327px */
+}
+
+.titlePage {
+    color: #000;
+    text-align: center;
+    text-shadow: 0px 1px 8px rgba(35, 35, 35, 0.25);
+    font-family: 'Mindset', sans-serif;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 201.023%; /* 96.491px */
+}
+
+#homeProceed {
+    padding: top 1rem;
+    font-size:32px;
+}
+
+.cardHeader {
+    color: var(--Gray, #313131);
+    text-align: center;
+    font-family: 'LeagueSpartan';
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 151.023%; /* 36.245px */
+    text-align: center;
   }
 
-  .cardBody {
-  } */
+.header {
+    color: var(--Gray, #313131);
+    text-align: center;
+    font-family: 'LeagueSpartan';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 151.023%; /* 36.245px */
+  }
+
+.cardBody {
+    color: var(--Gray, #313131);
+    font-family: 'LeagueSpartan';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%; /* 40px */
+    padding-top: 3rem;
+    text-align: left;
+  }
+
+.buttonText {
+    color: var(--Gray, #313131);
+    text-align: center;
+    font-family: 'LeagueSpartan';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 151.023%; /* 36.245px */
+}
+
+.cardColumnTextL {
+    color: var(--Gray, #313131);
+text-align: right;
+font-family: 'LeagueSpartan';
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 153.023%; /* 24.484px */
+text-align: right;
+}
+
+.cardColumnTextR {
+    color: var(--Gray, #313131);
+text-align: right;
+font-family: 'LeagueSpartan';
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 153.023%; /* 24.484px */
+text-align: left;
+}
 
 
 /* --- PAGE SPECIFIC PROPERTIES --- */
@@ -133,7 +241,7 @@ body {
     flex-shrink: 0;
     position: absolute;
     bottom: 0;
-
+    text-align: center;
     border-top: 5px solid #F9F7E8;
     border-right: 5px solid #F9F7E8;
     border-left: 5px solid #F9F7E8;
@@ -302,6 +410,3 @@ label {
 
 } */
 
-#orderToppings {
-    
-}
