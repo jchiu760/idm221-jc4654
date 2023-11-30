@@ -143,7 +143,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 200%; /* 40px */
-
+    padding: 30px;
 }
 
 #homeProceed {
@@ -249,6 +249,24 @@ text-align: left;
     line-height: 200%; /* 48px */
 }
 
+.catalogItemHeader {
+    color: var(--Gray, #313131);
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 151.023%; /* 36.245px */
+}
+
+.catalogItemDesc {
+    color: var(--Gray, #313131);
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+}
+
 /* --- */
 /* --- */
 
@@ -291,7 +309,8 @@ text-align: left;
     bottom: 0;
     transform: translateY(50%);
     width: 89vw;
-    height: 14.76vh;
+    min-height: 14.76vh;
+    height: auto;
     background: #F9F7E8;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 0px 0px 10px 10px;
