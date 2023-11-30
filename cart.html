@@ -13,23 +13,32 @@
     <!-- hero -->
     <div class="heroGeneral">
       <div class="heroBorderGeneral">
-          <h>
-              <!-- make id for page title -->
+          <h class="titlePage2">
               Cart
           </h>
-          <img class="heroImage" src="./media/heroCart.png" alt="Fancy flowery cake"></img>
+          <img class="heroImage" src="./media/heroCart.png" alt="Fancy flowery cake with golden drip"></img>
           <div class="heroGeneralCard">
-              <h>
-                Ready to receive your yummy eats?              </h>
-                <h>
-                  tip: tap on photos to see custom order specifications             </h>
+              <h class="titlePageSubheader">
+                Ready to receive your yummy eats?   
+              </h>
           </div>
-          
-
       </div>
   </div>
   <!-- content -->
-  <div class="cartItem">
+  <div className="container" style="overflow-x:clip">
+    <div class="cartItem">
+        <h class="cardHeader" style="padding-top:4rem">
+          1 strawberry shortcake
+        </h>
+        <img src="./media/orderCakeStrawberry.jpg" alt="Strawberry shortcake in the shape of a heart" width="50%">
+        </img>
+        <h class="cardHeader">
+          $14.00
+        </h>
+
+    </div>
+
+  <!-- <div class="cartItem">
     <h class="cardHeader">
       1 strawberry shortcake
     </h>
@@ -49,26 +58,38 @@
     <h class="cardHeader">
       $14.00
     </h>
-</div>
-<div style="padding-top: 20rem;">
-  <h>
-    total: $34.00
+</div> -->
+
+<div style="padding-top: 15rem;">
+  <h id="cartTotal">
+    total: $14.00
   </h>
 </div>
 <div id="cartForm">
-<h>contact info</h>
-<form>
-  <!-- reserved for php -->
-  <input type="email" id="cartInput" name="Email" placeholder="Email (hi@fluffybakery.net)">
-  <input type="number" id="cartInput" name="Phone" placeholder="Phone number (xxx-xxx-xxxx)">
-</form>
-<button class="button">
-  confirm order!!!
-</button>
-<p>
-  Note: Payment and further discussion will be discussed externally. Submitting an order is your first, but not last, step to receiving your cake!
-</p>
+  <h id="cartContactHeader">
+    contact info
+  </h>
+  <form id="cartFormInput">
+    <!-- reserved for php -->
+    <input type="email" id="cartInput" name="Email" placeholder="Email (hi@fluffybakery.net)">
+    <input type="number" id="cartInput" name="Phone" placeholder="Phone number (xxx-xxx-xxxx)">
+  </form>
+  <div class="cartCenter">
+    <button class="button">
+        <h class="buttonText">
+            confirm order!!!
+        </h>
+      </button>
+  </div>
+  <div class="cartCenter">
+    <h id="cartAfter">
+      Note: Payment and further discussion will be discussed externally. Submitting an order is your first, but not last, step to receiving your cake!
+    </h>
+  </div>
+
 </div>
+  </div>
+
   
 </body>
 </html>
