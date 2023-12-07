@@ -581,6 +581,35 @@ label {
 
 } */
 
+/* confirm */
 
-/* about */
+#confirm {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: url(../media/texturePaper.png), lightgray 50% / cover no-repeat;
+    background-size: contain;
+    background-blend-mode: multiply;
+}
 
+#confirmContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#confirmContent > div {
+    padding-bottom: 5rem;
+}
+
+#confirmContent > a {
+    padding-top: 3rem;
+}
+
+#confirmContent > a:first-of-type {
+    padding-top: 20rem;
+}
