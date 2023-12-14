@@ -63,9 +63,9 @@
       </div>
   </div>
   <!-- content -->
-  <div className="container" style="overflow-x:clip">
+  <div class="container containerNoOverflow">
     <div class="cartItem">
-        <h class="cardHeader" style="padding-top:4rem">
+        <h class="cardHeader cardHeaderPadding">
           1 strawberry shortcake
         </h>
         <img src="./media/orderCakeStrawberry.jpg" alt="Strawberry shortcake in the shape of a heart" width="50%">
@@ -76,45 +76,23 @@
 
     </div>
 
-  <!-- <div class="cartItem">
-    <h class="cardHeader">
-      1 strawberry shortcake
-    </h>
-    <img src="./media/catalogCake.png" alt="Strawberry shortcake in the shape of a heart" width="50%">
-    </img>
-    <h class="cardHeader">
-      $14.00
-    </h>
-  </div>
-  
-  <div class="cartItem">
-    <h class="cardHeader">
-      1 strawberry shortcake
-    </h>
-    <img src="./media/catalogCake.png" alt="Strawberry shortcake in the shape of a heart" width="50%">
-    </img>
-    <h class="cardHeader">
-      $14.00
-    </h>
-</div> -->
-
-<div style="padding-top: 15rem;">
-  <h id="cartTotal">
+<div class="cartTotal">
+  <h class="cartFontTotal">
     total: $14.00
   </h>
 </div>
-<div id="cartForm">
-  <h id="cartContactHeader">
+<div class="cartForm">
+  <h class="cartContactHeader">
     contact info
   </h>
-  <form id="cartFormInput">
+  <form class="cartFormInput">
     <!-- reserved for php -->
-    <input type="email" id="cartInput" name="Email" placeholder="Email (hi@fluffybakery.net)">
-    <input type="number" id="cartInput" name="Phone" placeholder="Phone number (xxx-xxx-xxxx)">
+    <input type="email" class="cartInput" name="Email" placeholder="Email (hi@fluffybakery.net)">
+    <input type="number" class="cartInput" name="Phone" placeholder="Phone number (xxx-xxx-xxxx)">
   </form>
   <div class="cartCenter">
     <a href="orderconfirm.html">
-      <button class="button">
+      <button type="submit" class="button">
           <h class="buttonText">
               confirm order!!!
           </h>
@@ -122,7 +100,7 @@
     </a>
   </div>
   <div class="cartCenter">
-    <h id="cartAfter">
+    <h class="cartAfter">
       Note: Payment and further discussion will be discussed externally. Submitting an order is your first, but not last, step to receiving your cake!
     </h>
   </div>

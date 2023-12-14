@@ -250,7 +250,7 @@ text-align: left;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 11rem 3rem 0 3rem;
+    padding: 15rem 3rem 0 3rem;
 }
 
 .aboutParagraph {
@@ -281,16 +281,16 @@ text-align: left;
 .catalogItemDesc {
     color: var(--Gray, #313131);
     text-align: center;
-    font-size: 40px;
-    line-height: 150%; /* 30px */
+    font-size: 36px;
+    line-height: 150%;
 }
 
 /* Cart Fonts */
 
-.cartTotal {
+.cartFontTotal {
     color: var(--PinkDark, #824836);
     text-align: center;
-    font-size: 60px;
+    font-size: 96px;
     font-weight: 700;
     line-height: 201.023%; /* 40.205px */
     display: flex;
@@ -301,7 +301,7 @@ text-align: left;
 .cartContactHeader {
     color: var(--PinkDark, #824836);
     text-align: center;
-    font-size: 40px;
+    font-size: 64px;
     font-weight: 500;
     line-height: 201.023%; /* 32.164px */
     display: flex;
@@ -324,6 +324,31 @@ text-align: left;
 
 /* --- */
 /* --- */
+
+/* About */
+
+.aboutBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutContainer {
+    padding-top: 0rem;
+    top: 11rem;
+}
+
+.aboutContainerWavy {
+    height: auto;
+}
+
+.aboutContainerText {
+    padding-top: 25rem;
+}
+
+.aboutButtonCatalog {
+    margin:auto; 
+    margin: 10% 0;
+}
 
 /* Home */
 
@@ -463,10 +488,9 @@ text-align: left;
     z-index: 20;
 }
 
-/* catalog */
+/* Catalog */
 
 .catalogSection {
-    padding-top: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -476,10 +500,18 @@ text-align: left;
     margin: auto;
 }
 
-/* cart */
+.catalogSectionPadding {
+    padding: 15rem 0 5rem 0;
+}
+
+/* Cart */
+
+.containerNoOverflow {
+    overflow-x: clip;
+}
 
 .cartItem {
-    /* refactored 'card' class */
+    /* this is a refactored 'card' class */
     position: relative;
     transform: scale(1.5);
     width: 100%;
@@ -494,6 +526,10 @@ text-align: left;
     align-items: center;
     text-align: center;
     margin-top: 30rem;
+}
+
+.cartTotal {
+    padding-top: 15rem;
 }
 
 .cartForm {
@@ -514,6 +550,8 @@ text-align: left;
     margin: 1rem;
     border: 1px solid var(--PinkDark, #824836);
     border-radius: 10px;
+    height: 2vh;
+    font-size: 36px;
 }
 
 .cartCenter {
@@ -523,15 +561,29 @@ text-align: left;
     justify-content: center;
 }
 
+.cardHeaderPadding {
+    padding-top: 4rem;
+}
+
 
 /* gallery */
 
 .galleryBody {
     padding-top: 5rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-bottom: 5rem;
+}
+
+.galleryButton {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
 }
 
 /* order */
@@ -596,7 +648,7 @@ label {
 
 } */
 
-/* confirm */
+/* order confirmed */
 
 .confirm {
     position: relative;
@@ -606,8 +658,9 @@ label {
     height: 100vh;
     width: 100vw;
     background: url(../media/texturePaper.png), lightgray 50% / cover no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-blend-mode: multiply;
+    background-color: #E9D7BD;
 }
 
 .confirmContent {
@@ -615,6 +668,7 @@ label {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 8rem;
 }
 
 .confirmContent > div {
