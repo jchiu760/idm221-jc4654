@@ -17,7 +17,7 @@
   </style>
 </head>
 <body>
-  <div id="heroHome">
+  <div class="heroHome">
     <div class="navbar">
       <a href="">
           <svg xmlns="http://www.w3.org/2000/svg" width="107" height="89" viewBox="0 0 107 89" fill="none">
@@ -56,9 +56,9 @@
           </svg>
       </a>
   </div>
-    <div id="heroBorder">
-      <div style="padding-top:4vh">
-        <h id="titleSubHome">we are</h> <br>
+    <div class="heroBorder">
+      <div class="heroBorderPadding">
+        <h class="titleSubHome">we are</h> <br>
         <h class="titlePage">FLUFFY BAKERY</h>
       </div>
     </div>
@@ -69,12 +69,13 @@
         <line y1="-0.5" x2="65.4663" y2="-0.5" transform="matrix(-0.707107 0.707107 0.707107 0.707107 147.292 82.0625)" stroke="black"/>
       </svg>
       
-      <h3 id="homeProceed">tap to proceed</h3>
+      <h3 class="homeProceed">tap to proceed</h3>
     </div>
   </div>
   <div class="container">
-      <img src="media/homeCakeBelly.png" alt="Cake that says 'Happy Birthday Belly!' with a little frog holding a flower!">
-    </img>
+      <img 
+      src="media/homeCakeBelly.png" 
+      alt="Cake that says 'Happy Birthday Belly!' with a little frog holding a flower!">
     <div class="card">
       <div class="cardText">
         <h class="cardHeader">
@@ -86,7 +87,7 @@
       </div>
     </div>
     <a href="./catalog.html">
-      <button class="button" style="transform: rotate(1.872deg) translate(248px, 113px);">
+      <button class="button homeButtonCatalogPosition">
         <h class="buttonText">
         see catalog
         </h>
@@ -95,7 +96,7 @@
     
   </div>
 <div class="cta">
-    <h class="cardHeader" style="padding-top:3rem">
+    <h class="cardHeader ctaHeaderPadding">
       we’re open to orders 24/7!
     </h>
   <div class="ctaBody">
@@ -115,9 +116,9 @@
     <img src="media/homeCakeTotoro.png" alt="Totoro cheesecake">
     </img>
   </div>
-  <div class="containerWavy" style="transform: translateY(-614px);">
-    <div id="homeWavyBody">
-      <div style="padding: 8rem 8rem 0 8rem">
+  <div class="containerWavy homeContainerWavyTranslate">
+    <div class="homeWavyBodyTop">
+      <div class="homeWavyBodyPadding">
         <h class="cardHeader">
           we’re your friendly bakery
         </h>
@@ -126,8 +127,7 @@
         </p>
       </div>
       <a href="./about.html">
-        <button class="button"
-        style="margin:auto; margin-top: 10%;">
+        <button class="button homeButtonMorePosition">
           <h class="buttonText">
           more about us
           </h>
@@ -137,7 +137,7 @@
       <div class="container">
         <img src="media/homeCakeFox.png" alt="Cake in the shape of a fox">
         </img>
-        <div class="card" style="transform: translateY(-165px) scale(1.3);">
+        <div class="card homeCardPosition">
           <div class="cardText">
             <h class="cardHeader">
               everything we create is art
@@ -147,7 +147,7 @@
             </h>
           </div>
         </div>
-        <div id="homeBottom">
+        <div class="homeBottom">
           <a href="gallery.html">
             <button class="button"
           style="transform: rotate(1.872deg)";>
@@ -158,7 +158,7 @@
           </button>
           </a>
           
-          <img id="homeBottomImage" src="media/homeCakeTurkey.png" alt="Turkey cupcake">
+          <img class="homeBottomImage" src="media/homeCakeTurkey.png" alt="Turkey cupcake">
           </img>
         </div>
       </div>
