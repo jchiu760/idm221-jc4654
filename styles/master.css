@@ -43,7 +43,6 @@ body {
 
 .containerWavy {
     width: 100%;
-    /* define height in HTML style */
     background: url(../media/sectionWavyPaper.svg) no-repeat;
     background-size: cover;
     text-align: center;
@@ -115,7 +114,14 @@ body {
     gap: 2rem;
 }
 
+/* --- */
+/* --- */
+
 /* --- FONTS --- */
+
+/* --- */
+/* --- */
+
 @font-face {
     font-family: 'LeagueSpartan';
     src: url('../media/fonts/LeagueSpartan-VariableFont_wght.ttf');
@@ -125,6 +131,8 @@ body {
     font-family: 'Mindset';
     src: url('../media/fonts/mindset-regular-1.ttf')
 }
+
+/* Title Fonts */
 
 .titleSubHome {
     color: black;
@@ -173,10 +181,7 @@ body {
     padding: 0 30px;
 }
 
-.homeProceed {
-    padding: top 1rem;
-    font-size: 32px;
-}
+/* Fonts for reusable elements */
 
 .cardHeader {
     color: var(--Gray, #313131);
@@ -207,20 +212,21 @@ body {
 .buttonText {
     color: var(--Gray, #313131);
     text-align: center;
-    font-family: 'LeagueSpartan';
     font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 151.023%; /* 36.245px */
+}
+
+/* Home Fonts */
+
+.homeProceed {
+    padding: top 1rem;
+    font-size: 32px;
 }
 
 .cardColumnTextL {
     color: var(--Gray, #313131);
 text-align: right;
-font-family: 'LeagueSpartan';
 font-size: 36px;
-font-style: normal;
-font-weight: 400;
 line-height: 153.023%; /* 24.484px */
 text-align: right;
 }
@@ -228,20 +234,17 @@ text-align: right;
 .cardColumnTextR {
     color: var(--Gray, #313131);
 text-align: right;
-font-family: 'LeagueSpartan';
 font-size: 36px;
-font-style: normal;
-font-weight: 400;
 line-height: 153.023%; /* 24.484px */
 text-align: left;
 }
+
+/* About Fonts */
 
 .aboutBlurbText {
     color: var(--Gray, #313131);
     text-align: center;
     font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 200%; /* 32px */
     display: flex;
     align-items: center;
@@ -254,8 +257,6 @@ text-align: left;
     color: var(--Gray, #313131);
     text-align:left;
     font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 275%; /* 32px */
     padding: 0 3rem 3rem 3rem;
 }
@@ -263,18 +264,16 @@ text-align: left;
 .aboutClosingText {
     color: var(--Gray, #313131);
     text-align: center;
-    font-family: League Spartan;
     font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 200%; /* 48px */
 }
+
+/* Catalog Fonts */
 
 .catalogItemHeader {
     color: var(--Gray, #313131);
     text-align: center;
     font-size: 48px;
-    font-style: normal;
     font-weight: 500;
     line-height: 151.023%; /* 36.245px */
 }
@@ -283,16 +282,15 @@ text-align: left;
     color: var(--Gray, #313131);
     text-align: center;
     font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 150%; /* 30px */
 }
+
+/* Cart Fonts */
 
 .cartTotal {
     color: var(--PinkDark, #824836);
     text-align: center;
     font-size: 60px;
-    font-style: normal;
     font-weight: 700;
     line-height: 201.023%; /* 40.205px */
     display: flex;
@@ -304,7 +302,6 @@ text-align: left;
     color: var(--PinkDark, #824836);
     text-align: center;
     font-size: 40px;
-    font-style: normal;
     font-weight: 500;
     line-height: 201.023%; /* 32.164px */
     display: flex;
@@ -316,8 +313,6 @@ text-align: left;
     color: var(--Gray, #313131);
     text-align: center;
     font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 200%;
     padding: 1rem 5rem 5rem 5rem;
 }
@@ -440,6 +435,10 @@ text-align: left;
 
 .homeButtonCatalogPosition {
     transform: rotate(1.872deg) translate(248px, 113px);
+}
+
+.homeButtonGalleryPosition {
+    transform: rotate(1.872deg);
 }
 
 .homeCardPosition {
