@@ -73,10 +73,7 @@ body {
     padding-top: 7vh;
     color: var(--Gray, #313131);
     text-align: center;
-    font-family: 'LeagueSpartan';
     font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 200%; /* 40px */
 }
 
@@ -317,6 +314,42 @@ text-align: left;
     padding: 1rem 5rem 5rem 5rem;
 }
 
+/* Order Fonts */
+
+.orderDescription {
+    color: var(--Gray, #313131);
+    text-align: center;
+    font-size: 24px;
+    line-height: 200%; /* 32px */
+    padding: 0 5rem;
+}
+
+.orderFormHeader {
+    color: #824836;
+    text-align: center;
+    font-size: 40px;
+    line-height: 201.023%; /* 32.164px */
+}
+
+.orderFormHeaderOption {
+    color: #9B5C49;
+    text-align: center;
+    font-size: 42px;
+    line-height: 201.023%; /* 32.164px */
+}
+
+.orderFontTotal {
+    color: var(--PinkDark, #824836);
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 201.023%; /* 40.205px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 /* --- */
 /* --- */
 
@@ -342,7 +375,7 @@ text-align: left;
 }
 
 .aboutContainerText {
-    padding-top: 25rem;
+    padding-top: 12rem;
 }
 
 .aboutButtonCatalog {
@@ -393,6 +426,7 @@ text-align: left;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 50;
 }
 
 .heroImage {
@@ -482,8 +516,6 @@ text-align: left;
     width: 40vw;
     height: auto;
     margin-left: auto;
-    flex-shrink: 0;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     transform: translateY(-39%);
     z-index: 20;
 }
@@ -548,7 +580,7 @@ text-align: left;
     background-color: transparent;
     padding: 20px 20px;
     margin: 1rem;
-    border: 1px solid var(--PinkDark, #824836);
+    border: 1px solid #824836;
     border-radius: 10px;
     height: 2vh;
     font-size: 36px;
@@ -588,16 +620,57 @@ text-align: left;
 
 /* order */
 
-.orderInputSection {
+.orderBody {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.orderContainerWavyPadding {
+    padding-bottom: 3rem;
+}
+
+.orderContainerWavyText {
+    padding-top: 12rem;
+}
+
+.orderImage {
+    position: relative;
+    top: 9rem;
+    z-index: 0;
+}
+
+.orderInputSection {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    gap: 2rem;
+}
+
+.orderInput {
+    width: 77%;
+    background-color: transparent;
+    padding: 20px 20px;
+    margin: 1rem;
+    border: 1px solid #824836;
+    border-radius: 10px;
+    height: 10vh;
+    font-size: 36px;
+}
+
+.orderInputRadio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
 }
 
 .inputTile {
-    height: 21vh;
+    height: 27vh;
     width: 43vw;
     position: relative;
     display: flex;
@@ -612,14 +685,11 @@ input[type="radio"] {
     height: 100%;
     width: 100%;
     border-radius: 10px;
-    border: 1px transparent #9B5C49;
+    border: 4px transparent #9B5C49;
 }
 
 input[type="radio"]::after {
     position: absolute;
-    /* font-family: ;
-    font-weight: ; 
-    font-size: ; */
     top: 10px;
     left: 10px;
     background-color: firebrick;
@@ -627,7 +697,7 @@ input[type="radio"]::after {
 
 input[type="radio"]:checked {
     border-radius: 10px;
-    border: 1px solid #9B5C49;
+    border: 4px solid #9B5C49;
     background: rgba(218, 172, 75, 0.10);
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
 }
@@ -643,10 +713,6 @@ label {
     position: absolute;
     bottom: 0;
 }
-
-/* label h {
-
-} */
 
 /* order confirmed */
 
