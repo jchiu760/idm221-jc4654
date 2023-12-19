@@ -292,7 +292,7 @@ a.button {
     text-align: center;
     font-size: 40px;
     line-height: 200%; /* 40px */
-    padding: 5px;
+    padding: 5px 15px;
 }
 
 .titlePageSubheader2 {
