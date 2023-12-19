@@ -30,7 +30,7 @@ body {
     gap: 3rem;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 11vh;
     width: 100vw;
     z-index: 55;
 }
@@ -89,9 +89,11 @@ body {
 }
 
 .navbar .menu-items {
+    position: relative;
     display: flex;
     flex-direction: column;
     padding-top: 30rem;
+    padding-bottom: 40rem;
     gap: 3rem;
     
     background: url(../media/texturePaper.png), lightgray 50% / cover no-repeat;
@@ -106,6 +108,7 @@ body {
     padding-left: 50px;
     transition: transform 0.5s ease-in-out;
     text-align: center;
+    top: 57rem;
 }
 
 .navbar .menu-items li {
@@ -129,6 +132,10 @@ body {
   .navmenu input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     transform: rotate(-45deg);
   }
+
+.navCart {
+    height: 102px;
+}
 
 /* --- */
 /* --- */
@@ -342,7 +349,7 @@ a.button {
 /* Home Fonts */
 
 .homeProceed {
-    padding: top 1rem;
+    padding-top: 1rem;
     font-size: 32px;
 }
 
