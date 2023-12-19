@@ -142,7 +142,6 @@ a.button {
     text-align: center;
     font-size: 64px;
     font-weight: 400;
-    line-height: 201.023%; /* 64.327px */
 }
 
 .titlePage {
@@ -150,7 +149,6 @@ a.button {
     text-shadow: 0px 1px 8px rgba(35, 35, 35, 0.25);
     font-family: 'Mindset', sans-serif;
     font-size: 96px;
-    line-height: 201.023%; /* 96.491px */
 }
 
 .titlePage2 {
