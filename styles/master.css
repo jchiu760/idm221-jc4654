@@ -76,7 +76,14 @@ body {
     line-height: 200%; /* 40px */
 }
 
-.button {
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+
     position: relative;
     width: 477px;
     height: 121px;
@@ -206,6 +213,7 @@ body {
     color: var(--Gray, #313131);
     text-align: center;
     font-size: 40px;
+    line-height: 130%;
 }
 
 .navOption {
@@ -397,7 +405,7 @@ text-align: left;
     width: 100vw;
 
     background: url(../media/texturePaper.png), lightgray 50% / cover no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-blend-mode: multiply;
     background-color: #E9D7BD;
 }
@@ -740,15 +748,14 @@ label {
     padding: 0 8rem;
 }
 
+.confirmButtons {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
 .confirmContent > div {
-    padding-bottom: 5rem;
-}
-
-.confirmContent > a {
-    padding-top: 3rem;
-}
-
-.confirmContent > a:first-of-type {
     padding-top: 20rem;
 }
 
